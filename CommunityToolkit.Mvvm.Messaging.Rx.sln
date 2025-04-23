@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityToolkit.Mvvm.Messaging.Rx", "CommunityToolkit.Mvvm.Messaging.Rx\CommunityToolkit.Mvvm.Messaging.Rx.csproj", "{8560145E-2531-408C-B6E6-B47AD1985B6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8560145E-2531-408C-B6E6-B47AD1985B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8560145E-2531-408C-B6E6-B47AD1985B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8560145E-2531-408C-B6E6-B47AD1985B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8560145E-2531-408C-B6E6-B47AD1985B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D886F669-3851-45A6-AEE5-F499BCA97BD6}
+	EndGlobalSection
+EndGlobal
