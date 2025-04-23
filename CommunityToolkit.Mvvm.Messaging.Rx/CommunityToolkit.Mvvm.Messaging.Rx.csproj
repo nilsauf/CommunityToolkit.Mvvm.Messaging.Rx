@@ -1,14 +1,47 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net8.0;net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<LangVersion>latest</LangVersion>
   </PropertyGroup>
 
+  <PropertyGroup>
+  	<Authors>Nils Aufschläger</Authors>
+  	<Owners>Nils Aufschläger</Owners>
+  	<Copyright>Copyright (c) Nils Aufschläger 2025</Copyright>
+  	<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+  	<PackageProjectUrl>https://github.com/nilsauf/CommunityToolkit.Mvvm.Messaging.Rx</PackageProjectUrl>
+  	<PackageIconUrl></PackageIconUrl>
+  	<PackageTags>CommunityToolkit.Mvvm;Reactive;Rx</PackageTags>
+  	<PackageReadmeFile>README.md</PackageReadmeFile>
+  	<PackageReleaseNotes>https://github.com/nilsauf/CommunityToolkit.Mvvm.Messaging.Rx/releases</PackageReleaseNotes>
+  	<RepositoryUrl>https://github.com/nilsauf/CommunityToolkit.Mvvm.Messaging.Rx</RepositoryUrl>
+  	<RepositoryType>git</RepositoryType>
+  
+  	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  	<!-- Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->
+  	<PublishRepositoryUrl>true</PublishRepositoryUrl>
+  	<!-- Embed source files that are not tracked by the source control manager in the PDB -->
+  	<EmbedUntrackedSources>true</EmbedUntrackedSources>
+  	<!-- Include PDB in the built .nupkg -->
+  	<IncludeSymbols>true</IncludeSymbols>
+  	<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+  
+  <ItemGroup>
+  	<None Include="../LICENSE" Pack="true" PackagePath="" />
+  	<None Include="../README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+	
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
     <PackageReference Include="System.Reactive" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+  	<PackageReference Include="GitVersion.MsBuild" Version="6.2.0" PrivateAssets="all" />
   </ItemGroup>
 
 </Project>
